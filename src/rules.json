@@ -1,0 +1,43 @@
+[
+  {
+    "tag": { "name": "img" },
+    "attr": {
+      "alt": { "value": null, "exist": true }
+    }
+  },
+  {
+    "tag": { "name": "a" },
+    "attr": {
+      "rel": { "value": null, "exist": true }
+    }
+  },
+  {
+    "tag": { "scope": "head", "name": "title", "exist": true }
+  },
+  {
+    "tag": { "scope": "head", "name": "meta" },
+    "attr": {
+      "name": { "value": "descriptions", "exist": true }
+    }
+  },
+  {
+    "tag": { "scope": "head", "name": "meta" },
+    "attr": {
+      "name": { "value": "robots", "exist": true }
+    }
+  },
+  {
+    "tag": { "scope": "head", "name": "meta" },
+    "attr": {
+      "name": { "value": "keywords", "exist": true }
+    }
+  },
+  {
+    "tag": { "name": "strong" },
+    "condition": { "operator": ">", "value": 15 }
+  },
+  {
+    "tag": { "name": "h1" },
+    "condition": { "operator": ">", "value": 1 }
+  }
+]
