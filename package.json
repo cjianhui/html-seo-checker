@@ -1,10 +1,12 @@
 {
   "name": "html-seo-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An npm package that parses a HTML file and detects SEO defects based on the rules specified by the user. ",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint src/",
+    "lint:fix": "./node_modules/.bin/eslint src/ --fix"
   },
   "keywords": [
     "seo"
@@ -17,8 +19,6 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "lint": "./node_modules/.bin/eslint src/",
-    "lint:fix": "./node_modules/.bin/eslint src/ --fix",
     "jest": "^26.4.0",
     "prettier": "^2.0.5"
   },
