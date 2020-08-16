@@ -1,0 +1,4 @@
+node_modules
+
+# Ignore IDE configuration files
+.vscode/
