@@ -1,6 +1,6 @@
 {
   "name": "html-seo-checker",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "An npm package that parses a HTML file and detects SEO defects based on the rules specified by the user. ",
   "main": "index.js",
   "scripts": {

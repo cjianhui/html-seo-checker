@@ -50,6 +50,7 @@ class Writer {
   }
 
   _writeToFile(data) {
+    console.log(`Writing to file: ${this.output}`);
     return new Promise((resolve, reject) => {
       fs.writeFile(this.output, data, { encoding: this.encoding }, (err) => {
         if (!err) {
@@ -62,6 +63,7 @@ class Writer {
   }
 
   _writeToStream(content) {
+    console.log('Writing to stream');
     this.output.setDefaultEncoding(this.encoding);
     return new Promise((resolve, reject) => {
       const CHUNK_SIZE = 4096;
@@ -86,6 +88,7 @@ class Writer {
   }
 
   _writeToConsole(data) {
+    console.log('Writing to console');
     this.output.log(data);
   }
 }

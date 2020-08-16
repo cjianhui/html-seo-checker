@@ -7,7 +7,7 @@
 ### With file input and console output
 
 ```
-const HTMLSeoChecker = require('html-seo-checker`);
+const HTMLSeoChecker = require('html-seo-checker');
 const inputFilePath = './test.html';
 
 const htmlSeoChecker = new HTMLSeoChecker();
@@ -19,12 +19,12 @@ htmlSeoChecker.check(inputFilePath, console);
 ```
 const fs = require('fs');
 const https = require('https');
-const HTMLSeoChecker = require('html-seo-checker`);
+const HTMLSeoChecker = require('html-seo-checker');
 const destFilePath = './result.txt';
 
 const htmlSeoChecker = new HTMLSeoChecker();
 
-https.get('https://www.github.com/', (readableStream) => {
+https.get('https://www.google.com/', (readableStream) => {
   const writableStream = fs.createWriteStream(destFilePath);
   htmlSeoChecker.check(readableStream, writableStream);
 });
