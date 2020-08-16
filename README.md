@@ -50,7 +50,7 @@ A sample rules configuration can be found `src/rules.json`.
 1. To include/exclude a tag, change the `exist` attribute.
 2. In the `tag` object, `exist: true` is implicit unless otherwise specified.
 3. To specify a parent for a `tag`, use the `scope` attribute.
-4. The conditions supported so far are `<, >, <=, >=,` and `=`.
+4. The operators supported so far are `<, >, <=, >=,` and `=`.
 
 #### Example
 
@@ -103,7 +103,7 @@ The 5 pre-defined SEO rules are:
 
 ```
 
-To check if `<meta name="robots">` exist:
+To check if the tag `<meta name="robots">` exists:
 
 ```
 {
@@ -114,7 +114,7 @@ To check if `<meta name="robots">` exist:
 },
 ```
 
-To disable a rule, set `disable:true`. All rules are enabled (implicitly) by default.
+To disable a rule, set `disable: true`. All rules are enabled (implicitly) by default.
 
 ```
 {
